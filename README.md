@@ -1,6 +1,8 @@
 # js-generators
 This are the examples for my JavaScript generator functions presentation.
 
+Please stay free to clone and play with it for your own purposes.
+
 All functions are tested with mocha, chai and sinon.
 
 
