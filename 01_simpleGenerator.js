@@ -1,4 +1,4 @@
-function* simpleGenerator() {
+export default function* simpleGenerator() {
     yield 1;
     yield 2;
     yield 3;

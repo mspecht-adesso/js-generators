@@ -1,4 +1,4 @@
-function* fibonacci() {
+export default function* fibonacci() {
     let [prev, current] = [0, 1];
 
     yield 0;

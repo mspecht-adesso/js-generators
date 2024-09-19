@@ -1,4 +1,4 @@
-function* countGenerator() {
+export default function* countGenerator() {
     let count = 0;
     
     while (count < 3) {

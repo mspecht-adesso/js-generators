@@ -1,4 +1,4 @@
-class NumberGenerator {
+export default class NumberGenerator {
     constructor(limit) {
         this.limit = limit;
     }

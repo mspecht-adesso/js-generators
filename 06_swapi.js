@@ -1,4 +1,4 @@
-async function* getPersonHomeworld(id) {
+export default async function* getPersonHomeworld(id) {
     const person = await fetch(`https://swapi.dev/api/people/${id}/`).then((result) => result.json());
     const homeworld = await fetch(person.homeworld).then((result) => result.json());
 

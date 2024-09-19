@@ -1,4 +1,4 @@
-function* fizzBuzz(n) {
+export default function* fizzBuzz(n) {
     for (let i = 1; i <= n; i++) {
       yield (i % 3 ? '' : 'Fizz') + (i % 5 ? '' : 'Buzz') || i;
     }

@@ -1,4 +1,4 @@
-function* dynamicCountGenerator(val) {
+export default function* dynamicCountGenerator(val) {
     let count = 1;
     while (count <= val) {
       yield count++;
