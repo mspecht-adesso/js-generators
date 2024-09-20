@@ -3,19 +3,20 @@ export default class NumberGenerator {
         this.limit = limit;
     }
 
-    // Async Generator Methode
+    // async generator method with *-symbol
     async *generateAsyncNumbers() {
         for (let i = 1; i <= this.limit; i++) {
-            // Simuliere eine asynchrone Operation
+            // simulates an asynchronous operation
             await new Promise(resolve => setTimeout(resolve, 1000));
             yield i;
         }
     }
 }
 
+// usage of NumberGenerator class
 const generator = new NumberGenerator(5);
 
-// Verwenden der Async Generator-Methode
+// usage of async generator method
 (async () => {
     const asyncGen = generator.generateAsyncNumbers();
     for await (let num of asyncGen) {

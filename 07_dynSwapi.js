@@ -1,3 +1,4 @@
+// async generator function with *-symbol
 export default async function* getHomeworld(id) {
     const person = await fetch(`https://swapi.dev/api/people/${id}/`).then((result) => result.json());
     const homeworld = await fetch(person.homeworld).then((result) => result.json());
@@ -5,6 +6,7 @@ export default async function* getHomeworld(id) {
     yield { person, homeworld };
 }
 
+// usage of async generator function
 (async () => {
     for (let id = 1; id <= 5; id++) {
         const homeworld = getHomeworld(id);

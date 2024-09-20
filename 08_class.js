@@ -3,7 +3,7 @@ export default class NumberGenerator {
         this.limit = limit;
     }
 
-    // Generator-Methode mit dem *-Symbol
+    // generator method with *-symbol
     *generateNumbers() {
         for (let i = 1; i <= this.limit; i++) {
             yield i;
@@ -11,9 +11,10 @@ export default class NumberGenerator {
     }
 }
 
+// usage of NumberGenerator class
 const generator = new NumberGenerator(3);
 
-// Verwenden der Generator-Methode
+// usage of generator method
 const gen = generator.generateNumbers();
 console.log(gen.next().value); // 1
 console.log(gen.next().value); // 2

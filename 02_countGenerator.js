@@ -1,3 +1,4 @@
+// generator function with *-symbol
 export default function* countGenerator() {
     let count = 0;
     
@@ -6,6 +7,7 @@ export default function* countGenerator() {
     }
 }
 
+// usage of generator function
 const gen = countGenerator();
 
 console.log(gen.next()); // { value: 1, done: false }
